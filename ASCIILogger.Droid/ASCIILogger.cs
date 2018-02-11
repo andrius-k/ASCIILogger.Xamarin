@@ -82,12 +82,6 @@ namespace ASCIILogger.Droid
         private static Bitmap ConvertToBitmap(Drawable drawable)
         {
             return ((BitmapDrawable)drawable).Bitmap;
-            //Bitmap mutableBitmap = Bitmap.CreateBitmap(widthPixels, heightPixels, Bitmap.Config.Argb8888);
-            //Canvas canvas = new Canvas(mutableBitmap);
-            //drawable.SetBounds(0, 0, widthPixels, heightPixels);
-            //drawable.Draw(canvas);
-
-            //return mutableBitmap;
         }
     }
 }
