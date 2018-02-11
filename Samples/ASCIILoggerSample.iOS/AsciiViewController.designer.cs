@@ -7,21 +7,22 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace ASCIILoggerSample.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("AsciiViewController")]
+    partial class AsciiViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UICollectionView collectionView { get; set; }
+        UIKit.UIWebView webView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (collectionView != null) {
-                collectionView.Dispose ();
-                collectionView = null;
+            if (webView != null) {
+                webView.Dispose ();
+                webView = null;
             }
         }
     }

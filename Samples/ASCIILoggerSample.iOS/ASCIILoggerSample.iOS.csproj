@@ -107,10 +107,17 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageCell.cs" />
+    <Compile Include="ImageCollectionViewSource.cs" />
+    <Compile Include="AsciiViewController.cs" />
+    <Compile Include="AsciiViewController.designer.cs">
+      <DependentUpon>AsciiViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\image1.jpg" />
     <BundleResource Include="Resources\image2.png" />
+    <BundleResource Include="Resources\image3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ASCIILogger.iOS\ASCIILogger.iOS.csproj">

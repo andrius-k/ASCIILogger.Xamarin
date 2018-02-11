@@ -3,15 +3,18 @@ using UIKit;
 using CoreGraphics;
 using System.Runtime.InteropServices;
 using System.Text;
+
 namespace ASCIILogger.iOS
 {
     /// <summary>
-    /// Provides an extension method see cref="Asciify"/> to UIImage class that returns
+    /// Provides an extension method <see cref="Asciify"/> to UIImage class that returns
     /// the ASCII version of provided UIImage.
     /// </summary>
     public static class ASCIILogger
     {
-        private const int MAX_IMAGE_SIZE = 100;
+        private const int MAX_IMAGE_SIZE = 1000;
+
+        private static readonly char[] asciiPixels = { '@', '%', '#', '*', '+', '=', '-', ':', '.', ' ' };
 
         /// <summary>
         /// Returns an ASCII version of provided image. The bigger the maxImageSize the more 
@@ -23,63 +26,26 @@ namespace ASCIILogger.iOS
             // Scale image down if needed
             image = ScaleImageDown(image, maxImageSize);
 
-            var resultBuilder = new StringBuilder();
+            int width = (int)image.Size.Width - 1;
+            int height = (int)image.Size.Height - 1;
 
-            for (int y = 1; y < image.Size.Height - 1; y++)
+            // Get raw pixel data
+            var rawData = GetRawPixelData(image, width, height);
+
+            var resultBuilder = new StringBuilder((width * 2 + 1) * height);
+
+            for (int y = 0; y < height; y++)
             {
                 resultBuilder.AppendLine();
 
-                for (int x = 1; x < image.Size.Width - 1; x++)
+                for (int x = 0; x < width; x++)
                 {
-                    var color = GetPixelColor(new CGPoint(x, y), image);
-                    color.GetRGBA(out nfloat red, out nfloat green, out nfloat blue, out nfloat alpha);
+                    (int red, int green, int blue, int alpha) color = GetPixelColor(x, y, width, rawData);
 
-                    int grayscale = (int)(0.2989 * red * 255 + 0.5870 * green * 255 + 0.1140 * blue * 255);
+                    int grayscale = (int)(0.2989 * color.red + 0.5870 * color.green + 0.1140 * color.blue);
 
-                    if (grayscale < 25)
-                    {
-                        resultBuilder.Append("@");
-                    } 
-                    else if (grayscale< 50) 
-                    {
-                        resultBuilder.Append("%");
-                    } 
-                    else if (grayscale< 75) 
-                    {
-                        resultBuilder.Append("#");
-                    } 
-                    else if (grayscale< 100) 
-                    {
-                        resultBuilder.Append("*");
-                    } 
-                    else if (grayscale< 125) 
-                    {
-                        resultBuilder.Append("+");
-                    } 
-                    else if (grayscale< 150) 
-                    {
-                        resultBuilder.Append("=");
-                    } 
-                    else if (grayscale< 175) 
-                    {
-                        resultBuilder.Append("-");
-                    } 
-                    else if (grayscale< 200) 
-                    {
-                        resultBuilder.Append(":");
-                    } 
-                    else if (grayscale< 225) 
-                    {
-                        resultBuilder.Append(".");
-                    } 
-                    else 
-                    {
-                        resultBuilder.Append(" ");
-                    }
-
-                    // Repeat last char to "stretch" the image horizontally.
-                    // This appears to keep the aspect ratio of the image
-                    resultBuilder.Append(resultBuilder[resultBuilder.Length - 1]);
+                    char asciiPixel = asciiPixels[grayscale / 26];
+                    resultBuilder.Append(asciiPixel, 2);
                 }
             }
 
@@ -108,23 +74,26 @@ namespace ASCIILogger.iOS
             return resultImage;
         }
 
-        private static UIColor GetPixelColor(CGPoint point, UIImage image)
+        /// <summary>
+        /// Returns one dimensional byte array with pixel color info (0 - 255).
+        /// Each 4 consecutive pixels represent r, g, b, a values of one pixel.
+        /// Use <see cref="GetPixelColor"/> method to get a tuple with each component
+        /// for a specific pixel.
+        /// </summary>
+        private static byte[] GetRawPixelData(UIImage image, int width, int height)
         {
-            var rawData = new byte[4];
+            var rawData = new byte[width * height * 4];
             var handle = GCHandle.Alloc(rawData);
-            UIColor resultColor = null;
+
             try
             {
                 using (var colorSpace = CGColorSpace.CreateDeviceRGB())
                 {
-                    using (var context = new CGBitmapContext(rawData, 1, 1, 8, 4, colorSpace, CGImageAlphaInfo.PremultipliedLast))
+                    using (var context = new CGBitmapContext(rawData, width, height, 8, width * 4, colorSpace, CGImageAlphaInfo.PremultipliedLast))
                     {
-                        context.DrawImage(new CGRect(-point.X, point.Y - image.Size.Height, image.Size.Width, image.Size.Height), image.CGImage);
-                        float red = (rawData[0]) / 255.0f;
-                        float green = (rawData[1]) / 255.0f;
-                        float blue = (rawData[2]) / 255.0f;
-                        float alpha = (rawData[3]) / 255.0f;
-                        resultColor = UIColor.FromRGBA(red, green, blue, alpha);
+                        context.DrawImage(new CGRect(0, 0, image.Size.Width, image.Size.Height), image.CGImage);
+
+                        return rawData;
                     }
                 }
             }
@@ -132,8 +101,15 @@ namespace ASCIILogger.iOS
             {
                 handle.Free();
             }
+        }
 
-            return resultColor;
+        /// <summary>
+        /// Returns r, g, b, a values for a specific pixel from raw image data.
+        /// </summary>
+        private static (int red, int green, int blue, int alpha) GetPixelColor(int x, int y, int width, byte[] rawData)
+        {
+            int position = (y * width * 4) + (x * 4);
+            return (rawData[position], rawData[position + 1], rawData[position + 2], rawData[position + 3]);
         }
     }
 }
