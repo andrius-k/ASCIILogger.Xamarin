@@ -4,7 +4,7 @@ These Xamarin.iOS and Xamarin.Droid libraries allow you to convert images to ASC
 
 ### Sample
 
-[[etc/images/xamarin.png]]
+![](etc/images/xamarin.png)
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
