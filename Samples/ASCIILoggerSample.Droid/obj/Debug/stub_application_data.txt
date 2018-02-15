@@ -1,0 +1,2 @@
+android.app.Application
+com.andriuskirilovas.ASCIILoggerSample_Droid

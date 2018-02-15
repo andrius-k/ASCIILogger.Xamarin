@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{183B443B-4DAD-4E3B-801E-765C8A285C71}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.ItemProperties.Samples.ASCIILoggerSample.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_25_Atom" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Samples/ASCIILoggerSample.iOS/AsciiViewController.cs">
+    <Files>
+      <File FileName="ASCIILogger.iOS/ASCIILogger.cs" Line="25" Column="10" />
+      <File FileName="ASCIILogger.Droid/ASCIILogger.cs" Line="42" Column="99" />
+      <File FileName="Samples/ASCIILoggerSample.Droid/ASCIILoggerSample.Droid.csproj" Line="1" Column="1" />
+      <File FileName="Samples/ASCIILoggerSample.Droid/MainActivity.cs" Line="3" Column="18" />
+      <File FileName="Samples/ASCIILoggerSample.Droid/AsciiActivity.cs" Line="5" Column="44" />
+      <File FileName="Samples/ASCIILoggerSample.iOS/ViewController.cs" Line="1" Column="1" />
+      <File FileName="Samples/ASCIILoggerSample.iOS/AsciiViewController.cs" Line="4" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Samples.ASCIILoggerSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CB82F217-EFD0-4A89-BF5C-F5AA8FD5637E">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Samples.ASCIILoggerSample.iOS>
+</Properties>

@@ -12,7 +12,7 @@ namespace ASCIILogger.iOS
     /// </summary>
     public static class ASCIILogger
     {
-        private const int MAX_IMAGE_SIZE = 1000;
+        private const int MAX_IMAGE_SIZE = 200;
 
         private static readonly char[] asciiPixels = { '@', '%', '#', '*', '+', '=', '-', ':', '.', ' ' };
 
