@@ -28,8 +28,6 @@
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/bin/Debug/com.andriuskirilovas.ASCIILoggerSample_Droid.apk
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/bin/Debug/com.andriuskirilovas.ASCIILoggerSample_Droid-Signed.apk
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/bin/Debug/ASCIILogger.Droid.dll
-/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/bin/Debug/ASCIILogger.Droid.pdb
-/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/ASCIILoggerSample.Droid.csprojResolveAssemblyReference.cache
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/ASCIILoggerSample.Droid.csproj.CoreCompileInputs.cache
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/ASCIILoggerSample.Droid.dll
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/ASCIILoggerSample.Droid.pdb
@@ -48,6 +46,8 @@
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/res/layout/activity_ascii.xml
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/R.cs.flag
 /Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/uploadflags.txt
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/bin/Debug/ASCIILogger.Droid.pdb
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.Droid/obj/Debug/ASCIILoggerSample.Droid.csprojResolveAssemblyReference.cache
 bin/Debug/Mono.Android.pdb
 obj/Debug/linksrc/ASCIILoggerSample.Droid.pdb
 obj/Debug/linksrc/ASCIILogger.Droid.pdb

@@ -1,0 +1,11 @@
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/bin/Release/ASCIILogger.Droid.dll
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/bin/Release/ASCIILogger.Droid.pdb
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/bin/Release/ASCIILogger.Droid.apk
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/bin/Release/ASCIILogger.Droid-Signed.apk
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/ASCIILogger.Droid.csproj.CoreCompileInputs.cache
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/ASCIILogger.Droid.dll
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/ASCIILogger.Droid.pdb
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/android/bin/ASCIILogger.Droid.apk
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/res/values/strings.xml
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/R.cs.flag
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.Droid/obj/Release/uploadflags.txt

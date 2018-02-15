@@ -1,0 +1,6 @@
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/bin/Release/ASCIILogger.iOS.dll
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/bin/Release/ASCIILogger.iOS.pdb
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/obj/Release/optimized/
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/obj/Release/ASCIILogger.iOS.csproj.CoreCompileInputs.cache
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/obj/Release/ASCIILogger.iOS.dll
+/Users/andrius/Projects/ASCIILogger.Xamarin/ASCIILogger.iOS/obj/Release/ASCIILogger.iOS.pdb

@@ -85,3 +85,9 @@ string ascii = drawable.Asciify();
 // Default is 200.
 ```
 
+### Setup
+
+Available on NuGet:
+* [ASCIILogger.iOS](https://www.nuget.org/packages/ASCIILogger.iOS/)
+* [ASCIILogger.Droid](https://www.nuget.org/packages/ASCIILogger.Droid/)
+

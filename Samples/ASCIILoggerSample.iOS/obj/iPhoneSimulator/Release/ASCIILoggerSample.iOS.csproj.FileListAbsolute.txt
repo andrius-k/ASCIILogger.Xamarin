@@ -1,0 +1,11 @@
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/bin/iPhoneSimulator/Release/ASCIILoggerSample.iOS.exe
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/bin/iPhoneSimulator/Release/ASCIILoggerSample.iOS.pdb
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/bin/iPhoneSimulator/Release/ASCIILogger.iOS.dll
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/actool/_PartialAppManifest.items
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/actool/_BundleResourceWithLogicalName.items
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/optimized/image2.png
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/optimized/
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/ASCIILoggerSample.iOS.csproj.CoreCompileInputs.cache
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/ASCIILoggerSample.iOS.exe
+/Users/andrius/Projects/ASCIILogger.Xamarin/Samples/ASCIILoggerSample.iOS/obj/iPhoneSimulator/Release/ASCIILoggerSample.iOS.pdb
